@@ -57,7 +57,7 @@
             color: rgb(0, 0, 0);
             font-style: italic;
             -webkit-text-stroke: 1px rgb(255, 255, 255);
-            text-shadow: 2px 2px 2px rgb(166, 166, 255);
+            text-shadow: 2px 2px 2px rgb(166, 166, 255);  
 
         }
 
@@ -95,7 +95,32 @@
         }
 
         form {
+            font-size: xx-large;
+            height: 100%;
+            width:100%;
             text-align: center;
+
+        }
+        form button{
+            height: 50px;
+            width: 150px;
+            font-size: large;
+            font-weight: bold;
+            border-radius: 8px;
+            background-image: linear-gradient(to right, rgb(212, 134, 134),orange,yellow,rgb(141, 219, 141),rgb(211, 174, 238),violet);
+        }
+        form button:hover{
+            height: 53px;
+            width: 155px;
+            font-size: x-large;
+            cursor:pointer;
+            border-radius: 8px;
+            background-image: linear-gradient(to right, rgb(212, 134, 134),orange,yellow,rgb(141, 219, 141),rgb(211, 174, 238),violet);
+      
+        }
+
+        .inc{
+            font-size: 40px;
         }
     </style>
 </head>
@@ -158,11 +183,11 @@
         </div>
 
         <div class="contact-form">
-            <h2>Contact us</h2>
+            <h2 class="inc">Contact us</h2>
             <form>
-                Name: <input type="text" required> <br> <br>
-                Email: <input type="email" required> <br> <br>
-                Message: <input type="text" required><br> <br>
+                Name: <input size="40px" placeholder="Enter Name" type="text" required> <br> <br>
+                Email: <input size="40px" placeholder="abc@gmail.com" type="email" required> <br> <br>
+                Message: <input size="36px" placeholder="Say hii!"  type="text" required><br> <br>
                 <button>Submit</button>
             </form>
         </div>
