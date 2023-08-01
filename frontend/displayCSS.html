@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayCSS</title>
+    <style>
+
+        /* display */
+        /* 3 types
+        block takes full width 
+        inline take only content width and ommit height and width property 
+        inline-block work for both  require width, height + :required width */
+
+        /* on adding padding and border the height and width of div also increase 
+        as an example consider 200px width  */
+         /* use box-sizing : border box upto a limit to solve this issue  */
+
+        .box {
+            height: 200px;
+            width: 500px;
+            background-color: rgb(248, 145, 145);
+            border: 3px solid black;
+            margin: 5px;
+            display: inline-block;
+            text-align: center;
+            box-sizing: border-box;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">this is div 1</div>
+    <div class="box">this is div 2</div>
+    <div class="box">this is div 3</div>
+    <div class="box">this is div 4</div>
+</body>
+
+</html>
