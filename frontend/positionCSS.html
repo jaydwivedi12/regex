@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: aliceblue;
+            display: inline-block;
+            margin: 2%;
+            text-align: center;
+            font-size: 200px;
+        }
+
+        #box1 {
+            background-color: red;
+
+            /* by default postion is static */
+
+            /* relative postion change position from the side div as from div box contain 1 and 3. */
+            /* position: relative;
+            top:400px; */
+
+            /* absolute position change positionn from the starting and ending of web page , means complete viewport */
+            /* absolute makes the div beghar */
+            /* position: absolute;
+            top: 400px; */
+
+            /* position fixed make a div fix into a corner like picture in picture mode */
+            /* also it makes div beghar */
+            /* position: fixed;
+            bottom: 0;
+            right:0; */
+
+        }
+        
+        .top {
+            margin-top: 20px;
+            width: 100%;
+            background-color: aqua;
+            font-size: 20px;
+        }
+
+        #for-top {
+            position: sticky;
+            top: 0;
+        }
+
+        p {
+            color: aliceblue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-img"> <img
+            src="https://media.istockphoto.com/id/1371663120/photo/car-driver-rear-view-mirror-sunrise-reflection.jpg?s=612x612&w=0&k=20&c=3KteH0hoXs8u9h8LDhwqqJvKSjjTkmuY7pYrtynCibc="
+            alt=""></div>
+    <div class="top" id="for-top">Top Bar</div>
+    <div class="box">1</div>
+    <div class="box" id="box1">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore blanditiis ducimus qui soluta numquam quaerat
+        enim fugiat, amet impedit doloremque maxime tempora eos totam iure fuga minima ipsum harum repellat nesciunt
+        magnam fugit accusantium. Exercitationem dolorum fugit est reprehenderit vel unde hic, laboriosam beatae.
+        Laborum commodi suscipit architecto deserunt dignissimos, numquam sit perspiciatis aliquid animi ea illum,
+        tempore explicabo ut totam quae tempora possimus sapiente aspernatur? Delectus culpa id nemo eius consequuntur,
+        quia, sequi, dolores saepe architecto quos vel! Ad eum animi nisi laboriosam. Optio illo eaque accusantium
+        exercitationem iure eligendi tempora ab quasi nisi cum praesentium minus deleniti sapiente, neque enim porro sit
+        alias quos eos quaerat repellat eum nihil? Ea, sequi vitae nostrum quisquam dolore nemo unde vero delectus,
+        maxime, dolorum accusantium! Non atque ipsa nulla, modi eius tempore! Molestias qui maxime optio voluptatibus,
+        nemo..</p>
+</body>
+
+</html>
