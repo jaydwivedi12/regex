@@ -27,7 +27,8 @@
 
     .left-container {
         position: fixed;
-        width: 25%;
+        left: 0%;
+        width: 18%;
         height: 100%;
         border-right: 1px solid rgba(255, 255, 255, 0.349);
     }
@@ -82,10 +83,100 @@
         width: 25px;
         border-radius: 50%;
     }
-    .menu-more{
-       position: absolute;
-       bottom: 5%;
-    
+
+    .menu-more {
+        position: absolute;
+        bottom: 5%;
+
+    }
+
+    .center {
+        margin-left: 18%;
+        width: 60%;
+        margin-top: 50px;
+        border: 1px solid white;
+
+    }
+
+    .story {
+        width: 100%;
+        height: 10%;
+        border: 1px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+
+    .profiles {
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+
+    }
+
+    .profiles img {
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid;
+        border-image: conic-gradient(rgb(255, 94, 0), rgb(196, 179, 0));
+
+    }
+
+    .round-bg {
+        border-radius: 50%;
+        background-image: conic-gradient(red, rgb(255, 115, 0));
+
+    }
+
+    .feed {
+
+        width: 70%;
+        height: 80%;
+        border: 2px solid white;
+        margin: 8%;
+        margin-left: 12%;
+    }
+
+    .feed-profile {
+        height: 7%;
+        border: 2px solid white;
+        display: flex;
+    }
+
+    .feed-profile img {
+        height: 80%;
+        border-radius: 50%;
+        display: flex;
+    }
+    .upload-location{
+        position: relative;
+        top: 50%;
+        right: 10%; 
+        font-size: 10px;
+    }
+    .upload-time{
+        font-size: 15px;
+        padding-top: 2px;
+        text-align: center;
+        color: rgb(173, 173, 173);
+    }
+    .dot{
+        font-size: 3px;
+        position: relative;
+        bottom: 10%;
+    }
+    .feed-menu{
+        position: relative;
+        left: 60%;
+        top: 20%;
+    }
+    .feed-post img{
+        height: 100%;
+        width: 100%;
     }
 </style>
 
@@ -109,11 +200,48 @@
         </div>
         <div class="center">
             <div class="story">
-                
+                <div class="profiles">
+                    <img class="round-bg" src="img/profile.jpg" alt="profile1"><span>_jay.dwi12</span>
+                </div>
+                <div class="profiles">
+                    <img class="round-bg" src="img/profile.jpg" alt="profile1"><span>_jay.dwi12</span>
+                </div>
+                <div class="profiles">
+                    <img class="round-bg" src="img/profile.jpg" alt="profile1"><span>_jay.dwi12</span>
+                </div>
+                <div class="profiles">
+                    <img class="round-bg" src="img/profile.jpg" alt="profile1"><span>_jay.dwi12</span>
+                </div>
+                <div class="profiles">
+                    <img class="round-bg" src="img/profile.jpg" alt="profile1"><span>_jay.dwi12</span>
+                </div>
+                <div class="profiles">
+                    <img class="round-bg" src="img/profile.jpg" alt="profile1"><span>_jay.dwi12</span>
+                </div>
+                <div class="profiles">
+                    <img class="round-bg" src="img/profile.jpg" alt="profile1"><span>_jay.dwi12</span>
+                </div>
             </div>
-            <div class="feed"></div>
+
+            <div class="feed">
+                <div class="feed-profile">
+                    <img src="img/profile.jpg" alt="">
+                    <span> &nbsp;  error.jay</span>
+                    <div class="upload-location">Delhi</div>
+                    <span class="upload-time"> <i class="fa-solid fa-circle fa-2xs dot"></i> 6 hr </span>
+                    <span class="feed-menu"><i class="fa-solid fa-ellipsis"></i></span>
+                </div>
+                <div class="feed-post">
+                    <img src="img/profile.jpg" alt="post">
+                </div>
+            </div>
         </div>
-        <div class="right-container"></div>
+        <div class="right-container">
+            <div class="self-profile"></div>
+            <div class="suggestion"></div>
+            <div class="footer-deatils"></div>
+            <div class="copyright"></div>
+        </div>
     </div>
 
 </body>
