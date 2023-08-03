@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid black; */
+
+        }
+
+        .screens {
+            height: 70%;
+            width: 30%;
+            /* border: 2px solid black; */
+        }
+
+        .screens img {
+            width: 100%;
+        }
+
+        .border-box {
+            border: 1px solid black;
+        }
+
+        .login-box {
+            height: 70%;
+            width: 20%;
+            /* border: 2px solid black; */
+
+        }
+
+        .logo {
+
+            height: 15%;
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Cookie', cursive;
+        }
+
+        .login-form {
+            height: 60%;
+
+        }
+
+        .line {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            color: rgba(0, 0, 0, 0.342);
+        }
+
+        .or {
+            position: relative;
+            top: 6px;
+            color: black;
+        }
+
+        .fb-login {
+            text-align: center;
+            color: #3d5081;
+            font-weight: bold;
+        }
+
+        .forgot-pass {
+            text-align: center;
+            color: #366fff;
+            font-size: 12px;
+        }
+
+        .forgot-pass a {
+            text-decoration: none;
+        }
+
+        .signup-sh {
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+
+        .login-form form {
+            display: flex;
+            flex-direction: column;
+            margin: 5%;
+        }
+
+        .save-login {
+            font-size: small;
+            text-align: center;
+        }
+
+        .login-form form button {
+            background-color: #7ab3f4;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-form form input {
+            margin: 1%;
+        }
+
+        .login-form form .check {
+            position: relative;
+            right: 100px;
+        }
+
+        .login-form form .save-login {
+            position: relative;
+            right: 40px;
+            bottom: 16px;
+        }
+
+        .input {
+            outline: none;
+        }
+        .input-height{
+            height: 30px;
+        }
+
+        input::placeholder {
+            color: rgba(0, 0, 0, 0.459);
+        }
+
+        .install {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-bottom: 0%;
+
+        }
+
+        .install-text {
+            text-align: center;
+            margin: 4%;
+        }
+
+        .install-img {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .install-img img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screens">
+            <img src="img/ui-ss.png" alt="">
+        </div>
+        <div class="login-box">
+            <hr>
+            <div class="logo">
+                Instagram
+            </div>
+            <div class="login-form">
+                <form>
+                    <input class="input-height" type="text" placeholder="username">
+                    <input class="input-height" type="password" placeholder="passsword">
+                    <input type="checkbox" class="check"><span class="save-login">Save Login info</span>
+                    <button>Login</button>
+                </form>
+                <div class="line">
+                    <p>________ <span class="or">or</span> _________</p>
+                </div>
+                <div class="fb-login">
+                    <p> <i class="fa-brands fa-square-facebook" style="color: #005eff;"></i> Log in with Facebook
+                    </p>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgotten Your Password?</a>
+                </div>
+
+                <div class="signup-sh">
+                    <span>Don't have an account? </span><a href="signup.html"> Sign Up</a>
+                </div>
+
+            </div>
+            <div class="install">
+                <div class="install-text">Get the App.</div>
+
+                <div class="install-img">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

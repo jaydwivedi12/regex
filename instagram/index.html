@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+    }
+
+    .left-container {
+        position: fixed;
+        width: 25%;
+        height: 100%;
+        border-right: 1px solid rgba(255, 255, 255, 0.349);
+    }
+
+    .site-name {
+        font-size: 40px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        font-family: 'Cookie', cursive;
+    }
+
+    .site-name:hover {
+        cursor: pointer;
+    }
+
+    .menu {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        padding-left: 20px;
+        font-size: 18px;
+        margin: 5%;
+        word-spacing: 25px;
+
+
+    }
+
+    .menu-icon {
+        font-size: 24px;
+    }
+
+    .menu-item:hover {
+        font-size: 19px;
+
+        .menu-icon {
+            font-size: 25px;
+        }
+
+        cursor: pointer;
+        background-color: rgba(252, 252, 252, 0.36);
+        border-radius: 25px;
+    }
+
+    .menu-item img {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+    .menu-more{
+       position: absolute;
+       bottom: 5%;
+    
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="site-name">
+                <span>Instagram</span>
+            </div>
+            <div class="menu">
+                <div class="menu-item"><i class="fa-solid fa-house menu-icon"></i> Home</div>
+                <div class="menu-item"><i class="fa-solid fa-magnifying-glass menu-icon"></i> Search</div>
+                <div class="menu-item"><i class="fa-regular fa-compass menu-icon"></i> Explore</div>
+                <div class="menu-item"> <i class="fa-solid fa-clapperboard menu-icon"></i> Reels</div>
+                <div class="menu-item"> <i class="fa-brands fa-facebook-messenger menu-icon"></i> Message</div>
+                <div class="menu-item"><i class="fa-regular fa-heart menu-icon"></i> Notification</div>
+                <div class="menu-item"><i class="fa-regular fa-square-plus menu-icon"></i> Create</div>
+                <div class="menu-item"> <img src="./img/profile.jpg" alt="profile-img"> Profile</div>
+                <div class="menu-item menu-more"> <i class="fa-solid fa-bars"></i> More</div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="story">
+                
+            </div>
+            <div class="feed"></div>
+        </div>
+        <div class="right-container"></div>
+    </div>
+
+</body>
+
+</html>
