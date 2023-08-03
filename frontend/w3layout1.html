@@ -1,0 +1,322 @@
+<!-- 3 aug hw  -->
+<!-- https://www.w3schools.com/w3css/tryw3css_templates_architect.htm  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3 School Layout</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        hr {
+            opacity: 20%;
+        }
+
+        .container {
+            height: 100vh;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            height: 5%;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .menu {
+            letter-spacing: 4px;
+        }
+
+        .menu a {
+            padding-right: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .front-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .front-image img {
+            width: 100%;
+        }
+
+        .abv-img {
+            position: absolute;
+            font-size: 40px;
+            color: white;
+
+        }
+
+        .br {
+            background-color: rgb(0, 0, 0);
+            background-size: 12px;
+            border: 20px solid rgba(0, 0, 0, 0.336);
+            opacity: 0.75;
+        }
+
+        .project-main-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 50%;
+            width: 23%;
+            margin: 1%;
+        }
+
+        .box img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .box-text {
+            background-color: black;
+            color: white;
+            position: absolute;
+
+        }
+
+        .card-main-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 23%;
+            height: 100%;
+            margin: 1%;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-details .team-pos {
+            opacity: 50%;
+        }
+
+        .card-details .team-det {
+            margin: 2%;
+            margin-left: 0%
+        }
+
+        .card-details button {
+            font-size: 15px;
+            height: 40px;
+            border: none;
+        }
+
+        .card-details button:hover {
+            cursor: pointer;
+            background-color: rgb(219, 219, 219);
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-section form input {
+            margin: 1%;
+            margin-left: 0%;
+            height: 40px;
+            opacity: 50%;
+        }
+
+        .contact-section form button {
+            width: 15%;
+            height: 20%;
+            font-size: large;
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+        }
+        .footer-img{
+            margin-top: 2%;
+            margin-bottom: 1px;
+        }
+        .footer-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .credit
+        {   color: white;
+            background-color: black;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .credit a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="site-name"><b>BR</b> Architect</div>
+            <div class="menu">
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="front-image">
+            <div class="abv-img">
+                <span class="br">BR</span> <span>Architect</span>
+            </div>
+            <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+        </div>
+
+        <div class="projects-section">
+            <h3>Project</h3>
+            <hr>
+            <div class="project-main-box">
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-text">House</div>
+                    <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h3>About</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.</p>
+
+            <div class="card-main-box">
+                <div class="card">
+                    <div class="card-img"> <img src="https://www.w3schools.com/w3images/team2.jpg" alt=""></div>
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <span class="team-pos">Ceo & Co-founder</span>
+                        <span class="team-det">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum. </span>
+                        <button>Contact</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"> <img src="https://www.w3schools.com/w3images/team2.jpg" alt=""></div>
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <span class="team-pos">Ceo & Co-founder</span>
+                        <span class="team-det">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum. </span>
+                        <button>Contact</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"> <img src="https://www.w3schools.com/w3images/team2.jpg" alt=""></div>
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <span class="team-pos">Ceo & Co-founder</span>
+                        <span class="team-det">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum. </span>
+                        <button>Contact</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"> <img src="https://www.w3schools.com/w3images/team2.jpg" alt=""></div>
+                    <div class="card-details">
+                        <h3>John Doe</h3>
+                        <span class="team-pos">Ceo & Co-founder</span>
+                        <span class="team-det">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                            pellentesque elementum. </span>
+                        <button>Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h3>Contact</h3>
+            <hr>
+            <p>Lets get in touch and talk about your next project.</p>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="text" name="" id="" placeholder="Subjeect">
+                <input type="text" name="" id="" placeholder="Comment">
+                <button> Send Message</button>
+            </form>
+        </div>
+        <div class="footer-img">
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+        </div>
+
+        <div class="credit">
+            <span> Powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.css</a></span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
