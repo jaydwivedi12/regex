@@ -17,18 +17,16 @@
             opacity: 20%;
         }
 
-        .container {
-            height: 100vh;
-        }
-
         .header {
             position: sticky;
             top: 0;
             display: flex;
-            height: 5%;
+            height: 50px;
             align-items: center;
             justify-content: space-between;
             background-color: rgb(255, 255, 255);
+            z-index: 999;
+            box-shadow: 0px 15px 10px -15px #111; 
         }
 
         .menu {
@@ -154,23 +152,27 @@
             background-color: black;
             color: white;
         }
-        .footer-img{
+
+        .footer-img {
             margin-top: 2%;
             margin-bottom: 1px;
         }
-        .footer-img img{
+
+        .footer-img img {
             width: 100%;
             height: 100%;
         }
-        .credit
-        {   color: white;
+
+        .credit {
+            color: white;
             background-color: black;
             height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .credit a{
+
+        .credit a {
             color: white;
         }
     </style>
@@ -182,9 +184,9 @@
         <div class="header">
             <div class="site-name"><b>BR</b> Architect</div>
             <div class="menu">
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
         <div class="front-image">
@@ -194,7 +196,7 @@
             <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
         </div>
 
-        <div class="projects-section">
+        <div class="projects-section" id="projects">
             <h3>Project</h3>
             <hr>
             <div class="project-main-box">
@@ -241,7 +243,7 @@
             </div>
         </div>
 
-        <div class="about-section">
+        <div class="about-section" id="about">
             <h3>About</h3>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -295,7 +297,7 @@
             </div>
         </div>
 
-        <div class="contact-section">
+        <div class="contact-section" id="contact">
             <h3>Contact</h3>
             <hr>
             <p>Lets get in touch and talk about your next project.</p>
