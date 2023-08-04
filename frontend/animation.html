@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 10%;
+            background-color: rgb(16, 255, 16);
+            text-align: center;
+
+            /* position used here for using 0% 25% 75% 100% */
+            position: relative;
+
+            animation-name: box-ani;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: ease-out;
+            animation-duration: 3s;
+        }
+
+        @keyframes box-ani {
+            from {
+                height: 200px;
+                width: 200px;
+                background-color: aqua;
+            }
+
+            to {
+
+                height: 800px;
+                width: 500px;
+                background-color: rgb(255, 0, 0);
+
+            }
+
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 1000px;
+
+            }
+
+            75% {
+                top: 200px;
+                left: 200px;
+            }
+
+            100% {
+                top: 200px;
+                left: 0px;
+            }
+        }
+
+        /* Transition Property */
+
+        .for-transition-property {
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            margin-top: 300px;
+            margin-left: 50px;
+            background-color: aqua;
+
+            /* transition-property: background-color,height,width,border-radius,cursor;
+            transition-duration: 3s; 
+            transition-timing-function: ease-in-out; */
+
+
+            /* shorthand of transition  property*/
+            transition: all 3s ease-in;
+
+        }
+
+        .for-transition-property:hover {
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-color: red;
+            cursor: pointer;
+            transform: rotate(360deg);
+            transform: translateX(25px);
+            transform: skew(360deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="box">This is animation using keyframes</div> -->
+
+    <div class="for-transition-property"> </div>
+    <div class="for-transition-property"> </div>
+    <div class="for-transition-property"> </div>
+    <div class="for-transition-property"> </div>
+    <div class="for-transition-property"> </div>
+
+</body>
+
+</html>
