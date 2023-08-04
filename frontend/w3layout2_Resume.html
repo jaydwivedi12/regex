@@ -1,0 +1,385 @@
+<!-- 4 aug hw -->
+<!-- https://www.w3schools.com/w3css/tryw3css_templates_cv.htm -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>W3 School Resume</title>
+    <style>
+        body {
+
+            font-family: Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        hr {
+            opacity: 25%;
+        }
+
+        .w3-color {
+            color: #429488;
+        }
+
+        .w3-left-space {
+            padding: 17px;
+        }
+
+        .left-container {
+            width: 33%;
+            float: left;
+            box-shadow: 3px 3px 3px rgba(76, 76, 76, 0.476);
+            /* border: 1px solid black; */
+            padding: 3px;
+        }
+
+        .myself {
+            height: 26%;
+        }
+
+        .my-name {
+            font-size: 30px;
+            position: absolute;
+            bottom: 7%;
+            left: 4%;
+            word-wrap: break-word;
+            margin: 1%;
+            margin-bottom: 0%;
+        }
+
+        .myself-contact {
+            margin-left: 5%;
+        }
+
+        .myself-contact p {
+            word-spacing: 10px;
+            padding: 3px;
+            padding-bottom: 0%;
+            color: #757575;
+        }
+
+        .myself-img {
+            width: 100%;
+            height: 60%;
+            position: relative;
+
+        }
+
+        .myself-img img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .skills-section {
+            height: 18%;
+            padding-left: 3px;
+        }
+
+        .skills-section p {
+            font-size: large;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .skills,
+        .lang {
+            margin: 6%;
+        }
+
+        progress {
+            -webkit-appearance: none;
+            border: 1px solid black;
+            border-radius: 8%;
+
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: #666;
+        }
+
+        #myturn span {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        #myturn {
+            display: block;
+            position: relative;
+            width: 100%;
+        }
+
+        progress {
+            /* background-color: #429488; */
+            width: 100%;
+        }
+
+        .right-container {
+            width: 65%;
+            float: right;
+            height: 80%;
+            /* border: 2px solid black; */
+        }
+
+        .work-section {
+            padding: 10px;
+            color: #757575;
+            margin-top: 2px;
+            box-shadow: 0px 0px 10px #232931;
+        }
+
+        .expe {
+            margin-left: 1%;
+        }
+
+        .work {
+            margin: 3%;
+        }
+
+        .work-title {
+            padding-top: 10px;
+            font-size: 20px;
+            color: #757575;
+            font-weight: 600;
+        }
+
+        .present {
+            background-color: #429488;
+            color: white;
+            border-radius: 10px;
+            border: 4px solid #429488;
+        }
+
+        .education-section {
+            padding: 10px;
+            margin-top: 20px;
+            color: #757575;
+            margin-top: 2px;
+            box-shadow: 0px 0px 10px #232931;
+        }
+
+        footer {
+            background-color: #009688;
+            width: 100%;
+            margin-top:1% ;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            /* text-decoration: none; */
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="myself">
+                <div class="myself-img"> <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="">
+                    <div class="my-name">Jane Doe</div>
+                </div>
+                <div class="myself-contact">
+                    <p><i class="fa-solid fa-briefcase w3-color"></i> Programmer</p>
+                    <p><i class="fa-solid fa-house-chimney w3-color"></i> Jaipur,India</p>
+                    <p><i class="fa-solid fa-envelope w3-color"></i> abc@gmail.com</p>
+                    <p><i class="fa-solid fa-phone w3-color"></i> 9876543210</p>
+                </div>
+                <hr>
+            </div>
+
+            <div class="skills-section">
+                <span class="w3-left-space"> <b><i class="fa-solid fa-asterisk fa-lg w3-color"></i>&nbsp;&nbsp;
+                        &nbsp;Skills</b></span>
+                <div class="skills">
+                    <label>Adobe Photoshop</label><br>
+                    <br>
+                    <div id="myturn">
+                        <span data-value="90" style="width:90%;"> 90%</span>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                </div>
+                <div class="skills">
+                    <label class="label-space">Illustrator</label><br>
+                    <br>
+                    <div id="myturn">
+                        <span data-value="70" style="width: 70%;">70%</span>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                </div>
+                <div class="skills">
+                    <label>Photography</label><br>
+                    <br>
+                    <div id="myturn">
+                        <span data-value="80" style="width: 80%;">80%</span>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                </div>
+                <div class="skills">
+                    <label>Media</label><br>
+                    <br>
+                    <div id="myturn">
+                        <span data-value="50" style="width: 50%;">90%</span>
+                        <progress value="50" max="100"></progress>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+
+            <div class="language">
+                <span class="w3-left-space"> <b><i class="fa-solid fa-earth-asia fa-lg w3-color"></i>
+                        &nbsp;&nbsp;Languages</b></span>
+                <div class="lang">
+                    <label>English</label><br>
+                    <br>
+                    <div id="myturn">
+                        <span data-value="100" style="width: 100%"></span>
+                        <progress value="100" max="100"></progress>
+                    </div>
+                </div>
+                <div class="lang">
+                    <label>Spanish</label><br>
+                    <br>
+                    <div id="myturn">
+                        <span data-value="50" style="width: 50%"></span>
+                        <progress value="50" max="100"></progress>
+                    </div>
+                </div>
+                <div class="lang">
+                    <label>German</label><br>
+                    <br>
+                    <div id="myturn">
+                        <span data-value="30" style="width: 30%"></span>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="work-section">
+                <br><br>
+                <span class="fa-xl wr-mr"><i class="fa-solid fa-lg fa-suitcase w3-color"></i> &nbsp;Work
+                    Experience</span>
+                <div class="expe">
+                    <div class="work">
+                        <div class="work-title">
+                            <span>Front End Developer / w3schools.com</span>
+                        </div>
+                        <div class="work-timimg">
+                            <p class="w3-color"> <i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp; Jan 2015 -
+                                <span class="present">Present</span>
+                            </p>
+                        </div>
+                        <div class="work-details">
+                            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
+                                reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus
+                                iure, iste.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="work">
+                        <div class="work-title">
+                            <span>Web Developer / something.com</span>
+                        </div>
+                        <div class="work-timimg">
+                            <p class="w3-color"> <i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;Mar 2012 - Dec
+                                2014</p>
+                        </div>
+                        <div class="work-details">
+                            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
+                                reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus
+                                iure, iste.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="work">
+                        <div class="work-title">
+                            <span>Graphic Designer / designsomething.com</span>
+                        </div>
+                        <div class="work-timimg">
+                            <p class="w3-color"> <i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;Jun 2010 - Mar
+                                2012</p>
+                        </div>
+                        <div class="work-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="education-section">
+                <br><br>
+                <span class="fa-xl wr-mr"><i class="fa-solid fa-certificate w3-color"></i> &nbsp;Education</span>
+                <div class="expe">
+                    <div class="work">
+                        <div class="work-title">
+                            <span>London Business School</span>
+                        </div>
+                        <div class="work-timimg">
+                            <p class="w3-color"> <i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;2013 -
+                                2015</p>
+                        </div>
+                        <div class="work-details">
+                            <p>Master Degree</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="work">
+                        <div class="work-title">
+                            <span>W3Schools.com</span>
+                        </div>
+                        <div class="work-timimg">
+                            <p class="w3-color"> <i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;Forever</p>
+                        </div>
+                        <div class="work-details">
+                            <p>Web Development! All I need to know in one place</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="work">
+                        <div class="work-title">
+                            <span>School of Coding</span>
+                        </div>
+                        <div class="work-timimg">
+                            <p class="w3-color"> <i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp; 2010 - 2013</p>
+                        </div>
+                        <div class="work-details">
+                            <p>Bachelor Degree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <p>Find Me on social Media</p>
+            <div class="icons ">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest" style="color: #fcfcfc;"></i></a>
+                <a href=""><i class="fa-brands fa-snapchat" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+        <p>Powered by <span><a href="">w3.css</a></span></p>
+    </footer>
+
+</body>
+
+</html>
