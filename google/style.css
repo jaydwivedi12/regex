@@ -1,0 +1,141 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile{
+    height: 5%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 2%;
+
+}
+
+.profile-logo{
+height: 100%;
+width:3%;
+padding-bottom: 100px;
+
+}
+.profile-logo img{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+ 
+.profile a{
+    color:white;
+    margin: 1%;
+    text-decoration: none;
+    
+}
+.profile a:hover{
+    text-decoration: underline;
+}
+
+#pr-space{
+    padding:10px;
+
+}
+.center{
+    height: 45%;
+    width: 60%;
+    margin-top: 12%;
+    /* border: 1px solid green; */
+}
+.logo{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    margin: 1%;
+    /* border: 1px solid brown; */
+}
+.logo img{
+    height: 100%;
+    width: 50%;
+    /* border: 1px black; */
+}
+.search-bar{
+    height: 15%;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.search-bar:hover{
+    background-color: #3b3b3b;
+}
+
+.search-logo{
+    padding-left: 10px;
+}
+.search{
+    width: 80%;
+}
+
+.search input{
+   font-size: 20px;
+   border: none;
+   word-wrap: wrap;
+   background-color:inherit;
+    width: 100%; 
+   outline: none;
+}
+.search input:focus{
+    color: white;
+}
+
+.mic,.photo-search{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.mic img{
+    height: 50%;
+    width: 40%;
+}
+.mic img:hover{
+cursor: pointer;
+}
+
+.photo-search img{
+    height: 60%;
+    width: 40%;
+}
+.g-btn{
+    padding: 4%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn1{
+    margin: 2%;
+    font-size: 15px;
+    background-color: #3b3b3b;
+    color: white;
+    height: 40px;
+    width: 20%;
+}
+#btn1:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.lang{
+    text-align: center;
+}
