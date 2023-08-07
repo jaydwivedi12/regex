@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        progress{
+            border: 1px solid red;
+        }
+        progress::-webkit-progress-bar
+        {
+        background-color: yellow;
+        }
+        progress::-webkit-progress-value{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+   <progress value="50" max="100">32%</progress>
+
+</div>
+</body>
+</html>
