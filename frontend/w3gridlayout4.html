@@ -114,13 +114,17 @@
             display: grid;
             grid-template-columns: 1fr 0.7fr;
             grid-template-rows: repeat(3,1fr);
-            text-align: center;
+            
 
             grid-template-areas: 
             "pr icon"
             "pr2 icon"
             "pr3 icon"
             ;
+
+            margin:50px;
+
+            
         }
 
         .p1,.p2,.p3
@@ -134,11 +138,14 @@
         }
         .p2{
             grid-area: pr2;
+            text-align: justify;
+         
         }
         .p3
         {
             grid-area: pr3;
             color: #5d5d5d;
+            text-align: justify;
         }
 
         .pimg{
@@ -155,6 +162,7 @@
             grid-template-columns: 1fr 0.8fr;
             grid-template-rows: repeat(3,1fr);
             text-align: center;
+            margin:50px;
 
             grid-template-areas: 
             "icon pr"
@@ -173,6 +181,7 @@
         .footer{
             text-align: center;
             padding-top: 80px;
+
         }
 
 
