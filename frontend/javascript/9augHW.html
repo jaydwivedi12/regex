@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            padding: 20%;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.5s;
+        }
+
+        #name {
+            background-color: yellow;
+        }
+
+         select{
+            border: none;
+            border-radius: 10%;
+            width: 20%;
+            height: 10%;
+            background-color: aqua;
+        }
+
+        select option{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> My name is <span id="name"> select to reveal</span></h1>
+    <Select id="select-name">
+        <option value="">Choose A name</option>
+        <option value="Jay">Jay</option>
+        <option value="JayPd">JayPd</option>
+        <option value="Jp">Jp</option>
+        <option value="dont know">dont know</option>
+    </Select>
+    <br>
+    <input type="text" id="ip1">
+    <input type="text" id="ip2">
+    <Select id="ope">
+        <option value=""> Choose Operation</option>
+        <option value="add">ADD</option>
+        <option value="sub">Subtract</option>
+        <option value="multi">multiply</option>
+        <option value="div">Divide</option>
+    </Select>
+    <p id="result"></p>
+
+    <Select id="bg-color">
+        <option value="">Choose Background color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">blue</option>
+        <option value="white">white</option>
+    </Select>
+
+    <script>
+        document.getElementById("ope").onchange = function () {
+            let op = document.getElementById("ope").value;
+            let num1 = parseFloat(document.getElementById("ip1").value);
+            let num2 = parseFloat(document.getElementById("ip2").value);
+            document.getElementById("result").innerHTML = calculate(num1, num2, op);
+        }
+
+        function calculate(num1, num2, op) {
+            if (op == "add")
+                return num1 + num2;
+            else if (op == "sub")
+                return num1 - num2;
+            else if (op == "multi")
+                return num1 * num2;
+            else if (op == "div")
+                return num1 / num2;
+        }
+
+        document.getElementById("bg-color").onchange = function () {
+            var bg = document.getElementById("bg-color").value;
+            if (bg == "red")
+                document.getElementsByTagName("body")[0].style.background = "#ffcccc";
+            else if (bg == "green")
+                document.body.style.backgroundColor = "RGB(158, 230, 177)";
+            else if (bg == "blue")
+                document.querySelector("body").style.backgroundColor = "#c3c5fa";
+            else
+                document.body.style.backgroundColor = "white";
+
+
+        }
+
+        document.getElementById("select-name").onchange = function () {
+            let nm = document.getElementById("select-name").value;
+            document.getElementById("name").innerHTML = nm;
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
