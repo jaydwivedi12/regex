@@ -12,7 +12,7 @@
     <script>
         document.getElementById("btn").onclick=function(){
            let a= document.getElementById("inp").value; 
-           countDigits(a);
+          document.getElementById("inp").value=countDigits(a);
 
         }
 
@@ -24,7 +24,7 @@
                 count++;
                 a=parseInt(a/10);
             }
-            document.write(count);
+            return count;
         }
     </script>
 </body>
