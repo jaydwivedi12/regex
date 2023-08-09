@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count No of Digits </title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="btn" > Get Value</button>
+    
+    <script>
+        document.getElementById("btn").onclick=function(){
+           let a= document.getElementById("inp").value; 
+           countDigits(a);
+
+        }
+
+        function countDigits(a)
+        {
+            let count=0;
+            while(a!=0)
+            {
+                count++;
+                a=parseInt(a/10);
+            }
+            document.write(count);
+        }
+    </script>
+</body>
+</html>
