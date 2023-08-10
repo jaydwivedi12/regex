@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM using class</title>
+</head>
+<body>
+    
+    <p class="para"> </p>
+    <p class="para"> </p>
+    <p class="para"> </p>
+    <p class="para"> </p>
+    <p class="para"> </p>
+    <p class="para"> </p>
+    <button class="name"> click here
+    </button>
+</body>
+<script>
+    document.getElementsByClassName("name")[0].onclick=function(){
+       let a=document.getElementsByClassName("para");
+       
+        for(let i=0; i<a.length;i++){
+            a[i].innerHTML="para" + i;
+        }
+
+        for(let i of a)
+        {
+            i.innerHTML="para ";
+        }
+        
+        for(let i in a){
+
+            a[i].innerHTML="para" + i;    
+        }
+    }
+</script>
+</html>

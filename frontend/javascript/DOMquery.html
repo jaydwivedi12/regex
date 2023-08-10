@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM using query</title>
+</head>
+
+<body> 
+    <input class="ip-c" id="ip-i" type="text">
+    <input class="ip-c" id="ip-i" type="text">
+    <input class="ip-c" id="ip-i" type="text">
+    <input class="ip-c" id="ip-i" type="text">
+    <button id="btn-id" >CLICK HERE</button>
+
+    <script>
+        document.querySelector('#btn-id').onclick=function(){
+           let a=document.querySelectorAll("#ip-i");
+           console.log(`result is ${a}`);
+        }
+    </script>
+</body>
+</html>
