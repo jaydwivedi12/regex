@@ -36,15 +36,21 @@
 //anonymous function😁
 
 
-(function(a, b) {
-    console.log(a + b);
-})(10,20);
+// (function(a, b) {
+//     console.log(a + b);
+// })(10,20);
 
 // add(2, 3); 
 
 //fat arrow function👌
 
-((a,b)=>{
-    console.log(a+b)
-})(100,300);
+// ((a,b)=>{
+//     console.log(a+b)
+// })(100,300);
  
+// let a=[1,2,2.2,"jay",5.7] 👌 array
+
+//callback function 
+// a.forEach(function(item){
+//     console.log(item)
+// })
