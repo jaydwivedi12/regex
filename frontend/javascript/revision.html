@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: #000000;
+            color: wheat;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> 1</div>
+    <div class="box"> 2</div>
+    <div class="box"> 3</div>
+</body>
+<script>
+  var boxes = document.querySelectorAll(".box");
+
+for (var i = 0; i < boxes.length; i++) {
+  boxes[i].style.background = "red";
+}
+
+</script>
+</html>
