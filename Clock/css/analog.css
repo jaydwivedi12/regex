@@ -35,7 +35,7 @@ body {
     position: relative;
     width: 50%;
     height: 100%;
-    background-image: url("https://www.nicepng.com/png/detail/7-79072_clock-no-hands-png-clipart-clock-face-template.png");
+    background-image: url("img/analog.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 2px solid black;
