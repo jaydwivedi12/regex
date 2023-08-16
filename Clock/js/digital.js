@@ -10,7 +10,7 @@ function updateClock() {
     };
     const hrOption = {
         hour: "2-digit",
-        // hour12:"false",
+        hour12:false,
     };
     const minOption = {
         minute: "2-digit"
