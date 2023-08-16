@@ -54,3 +54,6 @@
 // a.forEach(function(item){
 //     console.log(item)
 // })
+
+// let a=[10,20,30,40,50]
+// console.log(a.length)
