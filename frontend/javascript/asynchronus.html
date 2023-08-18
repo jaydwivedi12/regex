@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        //18august⌚⌚😊asynchronus
+
+        // setInterval(() => { console.log("this is interval") }, 1000)
+
+        // setTimeout(function(){
+        //     console.log("this is interval")
+        // },2000)
+
+        //promise 🤞🤞🤞🤞🤞🤞🤞
+        // let condition = 1;
+        // let prom = new Promise((resolve, reject) => {
+        //     if (condition) {
+        //         resolve("succuess")
+        //     }
+        //     else {
+        //         reject("failed")
+        //     }
+
+        // })
+
+
+        // prom.then((item) => {
+        //     console.log(item)
+        // }).catch((error) => {
+        //     console.log(error)
+        // })
+
+        //fetch 😊😊😊😊😊
+        // fetch return promise and evaluate with then 
+        // and then function also return promise
+
+        // fetch('data.txt').then((item)=>{
+        //    return item.text()
+        // }).then((data)=>{
+        //    console.log(data)
+        // }).catch((error)=>{
+        //     console.log(error)
+        // })
+
+
+        // api from web fetch
+        // fetch('https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20').then((item) => {
+        //     return item.json()
+        // }).then((data) => {
+        //     console.log(data.photos)
+        // })
+        
+
+        // 🤞🤞🤞🤞async function
+        //it returns promise
+        //await use to wait a
+
+    //     async function output() {
+
+    //         return "HEllo i am async";
+    //     }
+
+    //   output()
+    //   .then((item)=>{console.log(item)})
+    //   .catch((error)=>{console.log(error)})
+
+
+      async function output(){
+        console.log("jay")
+        const a=await fetch('https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20')
+      }
+    </script>
+</body>
+
+</html>
