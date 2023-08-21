@@ -62,53 +62,120 @@
 // callback hell💀💀
 
 //question❓❓❓❓
-const placeOrder = (callback) => {
-    setTimeout(() => {
-        console.log("orderPlaced")
-        callback();
-    },2000);   
+// const placeOrder = (callback) => {
+//     setTimeout(() => {
+//         console.log("orderPlaced")
+//         callback();
+//     },2000);   
 
-}
+// }
 
-const startProduction = (callback) => {
-    setTimeout(() => {
-        console.log("Production Start")
-        callback();
-    }, 5000);
-}
+// const startProduction = (callback) => {
+//     setTimeout(() => {
+//         console.log("Production Start")
+//         callback();
+//     }, 5000);
+// }
 
-const printId = (callback) => {
-    setTimeout(() => {
-        console.log("ID printed")
-        callback();
-    }, 5000);
-}
+// const printId = (callback) => {
+//     setTimeout(() => {
+//         console.log("ID printed")
+//         callback();
+//     }, 5000);
+// }
 
-const productName = (callback) => {
-    setTimeout(() => {
-        console.log("product name printed")
-        callback();
-    }, 2000);
-}
+// const productName = (callback) => {
+//     setTimeout(() => {
+//         console.log("product name printed")
+//         callback();
+//     }, 2000);
+// }
 
-const productDesc = (callback) => {
-    setTimeout(() => {
-        console.log("product description printed")
-        callback()
-    }, 1000);
-}
+// const productDesc = (callback) => {
+//     setTimeout(() => {
+//         console.log("product description printed")
+//         callback()
+//     }, 1000);
+// }
 
-console.log("ordering prodcution");
-placeOrder(() => {
-    console.log("In production");
-    startProduction(() => {
-        console.log("printig item start")
-        printId(() => {
-            productName(() => {
-                productDesc(() => {
-                    console.log("Day Ended")
-                })
-            })
-        })
+// console.log("ordering prodcution");
+// placeOrder(() => {
+//     console.log("In production");
+//     startProduction(() => {
+//         console.log("printig item start")
+//         printId(() => {
+//             productName(() => {
+//                 productDesc(() => {
+//                     console.log("Day Ended")
+//                 })
+//             })
+//         })
+//     })
+// })
+
+
+//21 august promise
+
+const placeOrder = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("orderPlaced.......")
+            resolve();
+        }, 2000);
     })
-})
+}
+
+const startProduction = () => {
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            console.log("production started.....")
+            resolve();
+        }, 3000);
+    })
+}
+const printId = () => {
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            console.log("printing started.....")
+            resolve();
+        }, 1000);
+    })
+}
+const productName= () => {
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            console.log("name started......")
+            resolve();
+        }, 1000);
+    })
+}
+const productDesc= () => {
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            console.log("desc started......")
+            resolve();
+        }, 2000);
+    })
+}
+
+console.log("order is going to placed")
+placeOrder()
+    .then(() => {
+        console.log("product is in production")
+        return startProduction();
+    })
+    .then(() => {
+        console.log("product is in printing")
+        return printId()
+    })
+    .then(() => {
+        console.log("product name")
+        return productName()
+    })
+    .then(() => {
+        console.log("giving desc")
+        return productDesc()
+    })
+    .catch((error)=>{
+        console.log("Error is" ,error)
+    })
