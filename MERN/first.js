@@ -114,68 +114,124 @@
 // })
 
 
-//21 august promise
+//21 august promise📅🗓️
 
-const placeOrder = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("orderPlaced.......")
-            resolve();
-        }, 2000);
-    })
-}
+// const placeOrder = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("orderPlaced.......")
+//             resolve();
+//         }, 2000);
+//     })
+// }
 
-const startProduction = () => {
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            console.log("production started.....")
-            resolve();
-        }, 3000);
-    })
-}
-const printId = () => {
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            console.log("printing started.....")
-            resolve();
-        }, 1000);
-    })
-}
-const productName= () => {
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            console.log("name started......")
-            resolve();
-        }, 1000);
-    })
-}
-const productDesc= () => {
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            console.log("desc started......")
-            resolve();
-        }, 2000);
-    })
-}
+// const startProduction = () => {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             console.log("production started.....")
+//             resolve();
+//         }, 3000);
+//     })
+// }
+// const printId = () => {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             console.log("printing started.....")
+//             resolve();
+//         }, 1000);
+//     })
+// }
+// const productName= () => {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             console.log("name started......")
+//             resolve();
+//         }, 1000);
+//     })
+// }
+// const productDesc= () => {
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             console.log("desc started......")
+//             resolve();
+//         }, 2000);
+//     })
+// }
 
-console.log("order is going to placed")
-placeOrder()
-    .then(() => {
-        console.log("product is in production")
-        return startProduction();
-    })
-    .then(() => {
-        console.log("product is in printing")
-        return printId()
-    })
-    .then(() => {
-        console.log("product name")
-        return productName()
-    })
-    .then(() => {
-        console.log("giving desc")
-        return productDesc()
-    })
-    .catch((error)=>{
-        console.log("Error is" ,error)
-    })
+// console.log("order is going to placed")
+// placeOrder()
+//     .then(() => {
+//         console.log("product is in production")
+//         return startProduction();
+//     })
+//     .then(() => {
+//         console.log("product is in printing")
+//         return printId()
+//     })
+//     .then(() => {
+//         console.log("product name")
+//         return productName()
+//     })
+//     .then(() => {
+//         console.log("giving desc")
+//         return productDesc()
+//     })
+//     .catch((error)=>{
+//         console.log("Error is" ,error)
+//     })
+
+//22 august async await  📅🗓️
+
+// async function main() {
+//     await placeOrder();
+//     await startProduction();
+//     await printId();
+//     await productName();
+//     await productDesc();
+// }
+
+// async function placeOrder() {
+//     await delay(2000);
+//     console.log("order placed")
+// }
+// async function startProduction(){
+//     await delay(1000);
+//     console.log("Prodcution Done")
+// }
+// async function printId() {
+//     await delay(3000);
+//     console.log("ID printed successfully")
+// }
+// async function productName() {
+//     await delay(4000);
+//     console.log("product namae done")
+// }
+// async function productDesc() {
+//     await delay(2000);
+//     console.log("product descripiton done")
+// }
+
+// function delay(time) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve();
+//         }, time);
+//     })
+// }
+// main();
+
+//fetch 👇
+// async function fetchData() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+//         if (!response.ok) {
+//             throw new Error("Not responding")
+//         }
+//         const data = await response.json();
+//         console.log(data)
+//     }
+//     catch(error) {
+//          console.log("Got an error",error)
+//     }
+// }
+// fetchData();
