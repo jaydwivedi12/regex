@@ -1,0 +1,155 @@
+<!-- User>login>enterpassword>print admin if admin and print admin if admin❓❓❓❓❓ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Here</title>
+</head>
+
+<body>
+    <label for="password">Enter Your password</label>
+    <input type="password" id="pwd">
+    <button id="btn">Login Now</button>
+    <h1 id="hd"></h1>
+    <h2 id="op"></h2>
+
+    <script>
+        document.getElementById("btn").onclick = () =>
+    {
+            let toPrint = document.getElementById("op");
+            let head = document.getElementById("hd")
+            const pass = document.getElementById("pwd").value;
+            console.log(pass)
+            //using callback hell
+            head.innerHTML = "Using Callback"
+            const user = (callback) => {
+                setTimeout(() => {
+                    toPrint.innerHTML = "Please wait for login"
+                    callback();
+                }, 0);
+            }
+            const password = (callback) => {
+                setTimeout(() => {
+                    toPrint.innerHTML = "validating password"
+                    callback();
+                }, 5000);
+            }
+            
+            const print = (callback) => {
+                setTimeout(() => {
+                    toPrint.innerHTML="password validated"
+                    callback();
+                }, 3000);
+            }
+            
+            user(() => {
+                password(() => {
+                    print(() => {
+                        if (pass == "jay")
+                            toPrint.innerHTML = "welcome Admin"
+                        else
+                            toPrint.innerHTML = "welcome user"
+                    })
+                })
+            })
+
+            //Using Promise
+
+            const userpr = () => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        toPrint.innerHTML = "Please wait for login using promise"
+                        resolve();
+                    }, 9000);
+                })
+            }
+
+            const passwordpr = () => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        toPrint.innerHTML = "Password match"
+                        resolve();
+                    }, 1000);
+                })
+            }
+
+            const printpr = () => {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        if (pass == "jay") {
+                            toPrint.innerHTML = "Welcome Admin"
+                        }
+                        else {
+                            toPrint.innerHTML = "Welcome User"
+                        }
+                        resolve();
+                    }, 1000);
+                })
+            }
+
+            setTimeout(() => {
+                head.innerHTML = "Using Promise"
+                head.style.color = "red"
+            }, 9000);
+
+            userpr()
+                .then(() => {
+                    toPrint.innerHTML = "matching password"
+                    return passwordpr();
+                })
+                .then(() => {
+                    return printpr();
+                })
+                .catch((error) => {
+                    console.log("error is", error)
+                })
+    
+
+
+        //using async await
+
+        setTimeout(() => {
+                head.innerHTML = "Using Async Await"
+                head.style.color = "Green"
+            }, 13000);
+        async function main() {
+            await userAa();
+            await passwordAa();
+            await printAa();
+        }
+        async function userAa() {
+            await delay(13000);
+            toPrint.innerHTML = " Please wait for login using Async await"
+        }
+
+        async function passwordAa() {
+            await delay(2000);
+            toPrint.innerHTML = " password matched successfully"
+        }
+
+        async function printAa() {
+            await delay(1000);
+            if (pass == "jay") {
+                toPrint.innerHTML = "Welcome Admin"
+            }
+            else {
+                toPrint.innerHTML = "Welcome User"
+            }
+        }
+          
+        const delay=(delayTime)=>{
+            return new Promise((resolve, reject)=>{
+                setTimeout(() => {
+                    resolve();
+                }, delayTime);
+            })
+        }
+        main();
+    }   
+    </script>
+</body>
+
+</html>
